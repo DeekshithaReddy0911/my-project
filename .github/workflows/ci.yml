@@ -62,6 +62,8 @@ jobs:
         distribution: 'temurin'
     - name: Make gradlew executable
       run: chmod +x gradlew
+    - name: Build with Gradle
+      run: ./gradlew build
 
 
     # Generates and submits a dependency graph, enabling Dependabot Alerts for all project dependencies.
